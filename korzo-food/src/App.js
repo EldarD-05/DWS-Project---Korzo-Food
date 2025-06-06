@@ -5,6 +5,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import AdminPage from "./pages/AdminPage";
+import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
   return (
@@ -16,6 +18,14 @@ function App() {
         <Route path="/kontakt" element={<Contact />} />
         <Route path="/prijava" element={<Login />} />
         <Route path="/registracija" element={<Register />} />
+        <Route
+          path="/admin"
+          element={
+            <PrivateRoute>
+              <AdminPage />
+            </PrivateRoute>
+          }
+        />
       </Routes>
     </Router>
   );
