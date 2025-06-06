@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin Korzo",
+      "email": "admin@korzo.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Test Guest",
+      "email": "guest@korzo.com",
+      "password": "guest123",
+      "role": "guest"
+    }
+  ],
+  "messages": []
+}
