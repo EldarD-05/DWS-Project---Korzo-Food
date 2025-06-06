@@ -15,5 +15,43 @@
       "role": "guest"
     }
   ],
-  "messages": []
+  "messages": [],
+  "meals": [
+    {
+      "id": 1,
+      "title": "Hamburger",
+      "price": 5.99,
+      "image": "/images/hamburger.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Korzo Wrap",
+      "price": 7.5,
+      "image": "/images/korzo wrap.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Pomfrit",
+      "price": 2.5,
+      "image": "/images/pomfrit.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Pohovana piletina",
+      "price": 6,
+      "image": "/images/pohovana piletina.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Palacinci Nutela",
+      "price": 3.5,
+      "image": "/images/palacinci nutela.jpg"
+    },
+    {
+      "id": "7eb1",
+      "title": "Kobasice",
+      "price": 5.95,
+      "image": "/images/kobasice.jpg"
+    }
+  ]
 }
