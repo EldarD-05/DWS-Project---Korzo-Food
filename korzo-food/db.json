@@ -1,57 +1,99 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Admin Korzo",
       "email": "admin@korzo.com",
       "password": "admin123",
       "role": "admin"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Test Guest",
       "email": "guest@korzo.com",
       "password": "guest123",
       "role": "guest"
     }
   ],
-  "messages": [],
+  "messages": [
+    {
+      "id": "4fbf",
+      "ime": "Guest Korzo",
+      "email": "guest@korzo.com",
+      "poruka": "Stranica zahtijeva jos poboljsanja",
+      "timestamp": "2025-06-06T20:06:13.781Z"
+    }
+  ],
   "meals": [
     {
       "id": 1,
       "title": "Hamburger",
       "price": 5.99,
-      "image": "/images/hamburger.jpg"
+      "image": "/images/hamburger.jpg",
+      "category": "Burgeri"
     },
     {
       "id": 2,
       "title": "Korzo Wrap",
       "price": 7.5,
-      "image": "/images/korzo wrap.jpg"
+      "image": "/images/korzo wrap.jpg",
+      "category": "Wrapovi"
     },
     {
       "id": 3,
       "title": "Pomfrit",
       "price": 2.5,
-      "image": "/images/pomfrit.jpg"
+      "image": "/images/pomfrit.jpg",
+      "category": "Prilozi"
     },
     {
       "id": 4,
       "title": "Pohovana piletina",
-      "price": 6,
-      "image": "/images/pohovana piletina.jpg"
+      "price": 6.0,
+      "image": "/images/pohovana piletina.jpg",
+      "category": "Grill"
     },
     {
       "id": 5,
       "title": "Palacinci Nutela",
       "price": 3.5,
-      "image": "/images/palacinci nutela.jpg"
+      "image": "/images/palacinci nutela.jpg",
+      "category": "Deserti"
     },
     {
-      "id": "7eb1",
+      "id": 6,
+      "title": "Pizza Margherita",
+      "price": 8.5,
+      "image": "/images/pizza margherita.jpg",
+      "category": "Pizza"
+    },
+    {
+      "id": 7,
+      "title": "Pileći file sa zara",
+      "price": 7.0,
+      "image": "/images/pileci file sa zara.jpg",
+      "category": "Grill"
+    },
+    {
+      "id": 8,
       "title": "Kobasice",
-      "price": 5.95,
-      "image": "/images/kobasice.jpg"
+      "price": 6.0,
+      "image": "/images/kobasice.jpg",
+      "category": "Grill"
+    },
+    {
+      "id": 9,
+      "title": "Coca Cola",
+      "price": 2.0,
+      "image": "/images/coca cola.jpg",
+      "category": "Pića"
+    },
+    {
+      "id": 10,
+      "title": "Ledeni čaj",
+      "price": 2.0,
+      "image": "/images/ledeni caj.jpg",
+      "category": "Pića"
     }
   ]
 }
