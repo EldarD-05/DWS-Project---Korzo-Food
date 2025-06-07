@@ -16,19 +16,30 @@ function Home() {
     return acc;
   }, {});
 
+  const scrollToMeals = () => {
+    const mealsSection = document.getElementById("meals-section");
+    if (mealsSection) {
+      mealsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div style={{ fontFamily: "Poppins, sans-serif" }}>
       {/* Hero section */}
-      <section style={{ backgroundColor: "#ff3c38", color: "white", padding: "60px 20px", textAlign: "center" }}>
+      <section style={{ background: "linear-gradient(135deg, #ff3c38, #ff5e57)", color: "white", padding: "60px 20px", textAlign: "center" }}>
+        <img src="/images/logo.jpg" alt="Korzo Food Logo" style={{ width: "120px", marginBottom: "20px" }} />
         <h1 style={{ fontSize: "3rem", marginBottom: "10px" }}>KORZO FOOD</h1>
         <p style={{ fontSize: "1.5rem" }}>Ukusni obroci. Brza dostava. Savršena lokacija.</p>
-        <button style={{ marginTop: "20px", padding: "12px 24px", background: "white", color: "#ff3c38", border: "none", fontWeight: "bold", fontSize: "1rem", cursor: "pointer", borderRadius: "6px" }}>
+        <button
+          onClick={scrollToMeals}
+          style={{ marginTop: "20px", padding: "12px 24px", background: "white", color: "#ff3c38", border: "none", fontWeight: "bold", fontSize: "1rem", cursor: "pointer", borderRadius: "6px" }}
+        >
           Pogledaj meni
         </button>
       </section>
 
       {/* Grouped products */}
-      <section style={{ padding: "40px 20px", maxWidth: "1200px", margin: "0 auto" }}>
+      <section id="meals-section" style={{ padding: "40px 20px", maxWidth: "1200px", margin: "0 auto" }}>
         {Object.keys(groupedMeals).map((category, index) => (
           <div key={index} style={{ marginBottom: "50px" }}>
             <h2 style={{ marginBottom: "20px", borderBottom: "2px solid #ff3c38", display: "inline-block", paddingBottom: "5px" }}>{category.toUpperCase()}</h2>
@@ -51,6 +62,11 @@ function Home() {
           </div>
         ))}
       </section>
+
+      {/* Footer */}
+      <footer style={{ background: "linear-gradient(90deg, #ff3c38, #ff5e57)", color: "white", padding: "30px 20px", textAlign: "center" }}>
+        <p style={{ margin: 0, fontSize: "1rem" }}>© {new Date().getFullYear()} Korzo Food. Sva prava zadržana.</p>
+      </footer>
     </div>
   );
 }
