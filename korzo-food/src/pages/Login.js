@@ -9,6 +9,11 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
 
+    if (!email.endsWith("@gmail.com")) {
+      alert("Dozvoljene su samo @gmail.com adrese.");
+      return;
+    }
+
     const res = await fetch(`http://localhost:5000/users?email=${email}&password=${password}`);
     const data = await res.json();
 
@@ -21,6 +26,7 @@ function Login() {
       alert("Neispravni podaci.");
     }
   };
+
 
   return (
     <div className="auth-wrapper">

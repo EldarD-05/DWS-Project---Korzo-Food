@@ -3,14 +3,14 @@
     {
       "id": "1",
       "name": "Admin Korzo",
-      "email": "admin@korzo.com",
+      "email": "admin@gmail.com",
       "password": "admin123",
       "role": "admin"
     },
     {
       "id": "2",
       "name": "Test Guest",
-      "email": "guest@korzo.com",
+      "email": "guest@gmail.com",
       "password": "guest123",
       "role": "guest"
     }
