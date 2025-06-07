@@ -30,14 +30,14 @@
       "title": "Hamburger",
       "price": 5.99,
       "image": "/images/hamburger.jpg",
-      "category": "Burgeri"
+      "category": "Burgeri i užina"
     },
     {
       "id": 2,
       "title": "Korzo Wrap",
       "price": 7.5,
       "image": "/images/korzo wrap.jpg",
-      "category": "Wrapovi"
+      "category": "Burgeri i užina"
     },
     {
       "id": 3,
@@ -55,16 +55,16 @@
     },
     {
       "id": 5,
-      "title": "Palacinci Nutela",
+      "title": "Palačinci Nutela",
       "price": 3.5,
-      "image": "/images/palacinci nutela.jpg",
+      "image": "/images/palacinci-nutella.png",
       "category": "Deserti"
     },
     {
       "id": 6,
       "title": "Pizza Margherita",
       "price": 8.5,
-      "image": "/images/pizza margherita.jpg",
+      "image": "/images/Pizza margharita.jpg",
       "category": "Pizza"
     },
     {
@@ -94,6 +94,259 @@
       "price": 2.0,
       "image": "/images/ledeni caj.jpg",
       "category": "Pića"
+    },
+    {
+      "id": 12,
+      "title": "Palačinci Rafaelo",
+      "price": 5.00,
+      "category": "Deserti",
+      "image": "/images/palacinci-rafaelo.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Wafle Nutella",
+      "price": 4.00,
+      "category": "Deserti",
+      "image": "/images/waffle nutela.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Barbecue Sos",
+      "price": 2.50,
+      "image": "/images/BBQ sos.jpg",
+      "category": "Sosevi"
+    },
+    {
+      "id": 15,
+      "title": "Curry Sos",
+      "price": 2.50,
+      "image": "/images/curry sos.jpg",
+      "category": "Sosevi"
+    },
+    {
+      "id": 16,
+      "title": "Kečap",
+      "price": 2.50,
+      "image": "/images/kecap.jpg",
+      "category": "Sosevi"
+    },
+    {
+      "id": 17,
+      "title": "Nacho Sos",
+      "price": 2.50,
+      "image": "/images/nacho sos.jpg",
+      "category": "Sosevi"
+    },
+    {
+      "id": 18,
+      "title": "Tartar Sos",
+      "price": 2.50,
+      "image": "/images/tartar sos.jpg",
+      "category": "Sosevi"
+    },
+    {
+      "id": 19,
+      "title": "Fanta",
+      "price": 2.00,
+      "image": "/images/fanta.jpg",
+      "category": "Pića"
+    },
+    {
+      "id": 20,
+      "title": "Dvojni C",
+      "price": 2.00,
+      "image": "/images/dvojni c.jpg",
+      "category": "Pića"
+    },
+    {
+      "id": 21,
+      "title": "Čiken",
+      "price": 5.00,
+      "image": "/images/ciken.jpg",
+      "category": "Burgeri i užina"
+    },
+    {
+      "id": 22,
+      "title": "Hot Dog",
+      "price": 5.00,
+      "image": "/images/hotdog.jpg",
+      "category": "Burgeri i užina"
+    },
+    {
+      "id": 23,
+      "title": "Pileća salata",
+      "price": 2.50,
+      "image": "/images/pileca salata.jpg",
+      "category": "Prilozi"
+    },
+    {
+      "id": 24,
+      "title": "Pohovani sir",
+      "price": 2.00,
+      "image": "/images/pohovani sir.jpg",
+      "category": "Grill"
+    },
+    {
+      "id": 25,
+      "title": "Chicken Curry",
+      "price": 5.00,
+      "image": "/images/Chicken Curry.jpg",
+      "category": "Burgeri i užina"
+    },
+    {
+      "id": 26,
+      "title": "Chicken Nuggets",
+      "price": 6.00,
+      "image": "/images/Chicken nuggets.jpg",
+      "category": "Grill"
+    },
+    {
+      "id": 27,
+      "title": "Grand Cheese",
+      "price": 5.95,
+      "image": "/images/Grand Cheese Burger.jpg",
+      "category": "Burgeri i užina"
+    },
+    {
+      "id": 28,
+      "title": "Korzo Sendvič",
+      "price": 4.00,
+      "image": "/images/Korzo sendvič.jpg",
+      "category": "Burgeri i užina"
+    },
+    {
+      "id": 29,
+      "title": "Sendvič 1",
+      "price": 3.00,
+      "image": "/images/Sendvič1.jpg",
+      "category": "Burgeri i užina"
+    },
+    {
+      "id": 30,
+      "title": "Sendvič 2",
+      "price": 3.50,
+      "image": "/images/Sendvič2.jpg",
+      "category": "Burgeri i užina"
+    },
+    {
+      "id": 31,
+      "title": "Tobacco Cheese sendvič",
+      "price": 4.50,
+      "image": "/images/Tobacco cheese sendvič.jpg",
+      "category": "Burgeri i užina"
+    },
+    {
+      "id": 32,
+      "title": "Veggie Burger",
+      "price": 5.00,
+      "image": "/images/Veggie Burger.jpg",
+      "category": "Burgeri i užina"
+    },
+    {
+      "id": 33,
+      "title": "Pohovana piletina u sosu",
+      "price": 6.00,
+      "image": "/images/Pohovana piletina u sosu.jpg",
+      "category": "Grill"
+    },
+    {
+      "id": 34,
+      "title": "Rolovani pileći ražnjići",
+      "price": 6.00,
+      "image": "/images/Rolovani pileći ražnjići.jpg",
+      "category": "Grill"
+    },
+    {
+      "id": 35,
+      "title": "Coca Cola Zero",
+      "price": 2.50,
+      "image": "/images/coca-cola zero.png",
+      "category": "Pića"
+    },
+    {
+      "id": 36,
+      "title": "Orangina",
+      "price": 1.50,
+      "image": "/images/orangina.png",
+      "category": "Pića"
+    },
+    {
+      "id": 37,
+      "title": "Schweps",
+      "price": 3.00,
+      "image": "/images/schweps.png",
+      "category": "Pića"
+    },
+    {
+      "id": 38,
+      "title": "Schweps Premium",
+      "price": 3.50,
+      "image": "/images/schweps-premium.png",
+      "category": "Pića"
+    },
+    {
+      "id": 39,
+      "title": "Fruktal",
+      "price": 3.00,
+      "image": "/images/sok-fruktal.png",
+      "category": "Pića"
+    },
+    {
+      "id": 40,
+      "title": "Fruktal Grožđe",
+      "price": 3.00,
+      "image": "/images/sok-fruktal-grozdje.png",
+      "category": "Pića"
+    },
+    {
+      "id": 41,
+      "title": "Majoneza",
+      "price": 1.50,
+      "image": "/images/Majoneza.jpg",
+      "category": "Sosevi"
+    },
+    {
+      "id": 42,
+      "title": "Pizza Al Tono",
+      "price": 8.50,
+      "image": "/images/Pizza Al tono.jpg",
+      "category": "Pizza"
+    },
+    {
+      "id": 43,
+      "title": "Pizza Capriccosa",
+      "price": 9.50,
+      "image": "/images/Pizza Capriccosa.jpg",
+      "category": "Pizza"
+    },
+    {
+      "id": 44,
+      "title": "Pizza Fungi",
+      "price": 8.00,
+      "image": "/images/Pizza Fungi.jpg",
+      "category": "Pizza"
+    },
+    {
+      "id": 45,
+      "title": "Pizza Losos",
+      "price": 7.00,
+      "image": "/images/Pizza Losos.jpg",
+      "category": "Pizza"
+    },
+    {
+      "id": 46,
+      "title": "Pizza Meksikana",
+      "price": 10.00,
+      "image": "/images/Pizza Meksikana.jpg",
+      "category": "Pizza"
+    },
+    {
+      "id": 47,
+      "title": "Pizza Vegetarijana",
+      "price": 9.00,
+      "image": "/images/Pizza Vegetarijana.jpg",
+      "category": "Pizza"
     }
+
   ]
 }
