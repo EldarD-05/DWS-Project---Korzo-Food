@@ -7,7 +7,7 @@ import Register from "./pages/Register";
 import AdminPage from "./pages/AdminPage";
 import Navbar from "./components/Navbar";
 import PrivateRoute from "./components/PrivateRoute";
-import "./App.css";
+import "../src/assets/styles/App.css";
 
 function App() {
   return (
