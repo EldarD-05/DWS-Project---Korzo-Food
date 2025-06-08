@@ -67,19 +67,19 @@ Korzo-Food/
 - **Amna Bečak** – 
 - **Naida Burkić** – 
 
-### 🔹 Naida
+### Naida
 - Implementirala autentikaciju (login/registracija) koristeći `json-server` i kreirala testne korisnike
 - Doradila izgled stranica, dodala pozadine i ispravila greške u prikazu
 - Unijela brojne proizvode (jela) u bazu i frontend prikaz
 
-### 🔹 Amna
+### Amna
 - Kreirala stranice: **O nama**, **Kontakt**, **Prijava** i **Registracija**
 - Implementirala **admin panel** s prikazom samo za admin korisnike i zaštitila rutu
 - Omogućila dodavanje jela u admin panel (kategorije, slike)
 - Ažurirala početnu stranicu s **hero sekcijom** i grupisanim prikazom jela
 - Dodala dugme **„Dodaj u korpu“** za svako jelo i doradila validaciju e-maila
 
-### 🔹 Eldar (vođa grupe)
+### Eldar (vođa grupe)
 - Postavio strukturu React projekta i inicijalne fajlove
 - Razvio formu za dodavanje jela u admin panel koristeći slike iz lokalnog `public/images` foldera
 - Implementirao pozadinsku sliku, centriranje **Login** i **Register** formi
