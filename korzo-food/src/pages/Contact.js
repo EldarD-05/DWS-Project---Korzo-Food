@@ -24,6 +24,12 @@ function Contact() {
       return;
     }
 
+    if (!email.endsWith("@gmail.com")) {
+      alert("Unesite ispravnu Gmail adresu.");
+      return;
+    }
+
+
     const message = {
       ime,
       email,

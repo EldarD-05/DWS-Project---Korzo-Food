@@ -8,6 +8,11 @@ function Register() {
   const handleRegister = async (e) => {
     e.preventDefault();
 
+    if (!email.endsWith("@gmail.com")) {
+      alert("Dozvoljene su samo @gmail.com adrese.");
+      return;
+    }
+
     const res = await fetch("http://localhost:5000/users", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -25,6 +30,7 @@ function Register() {
       alert("Greška pri registraciji.");
     }
   };
+
 
   return (
     <div className="auth-wrapper">
