@@ -4,7 +4,6 @@ function Contact() {
   const user = JSON.parse(localStorage.getItem("user"));
 
   const [ime, setIme] = useState("");
-  const [email, setEmail] = useState("");
   const [poruka, setPoruka] = useState("");
   const [svePoruke, setSvePoruke] = useState([]);
 
@@ -19,14 +18,19 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!ime || !email || !poruka) {
+    if (!ime || !poruka) {
       alert("Sva polja su obavezna!");
+      return;
+    }
+
+    if (!user?.email?.endsWith("@gmail.com")) {
+      alert("Email mora biti Gmail adresa.");
       return;
     }
 
     const message = {
       ime,
-      email,
+      email: user?.email || "guest@gmail.com",
       poruka,
       timestamp: new Date().toISOString()
     };
@@ -40,7 +44,6 @@ function Contact() {
     if (res.ok) {
       alert("Poruka uspješno poslana!");
       setIme("");
-      setEmail("");
       setPoruka("");
     } else {
       alert("Greška pri slanju poruke.");
@@ -74,15 +77,6 @@ function Contact() {
               type="text"
               value={ime}
               onChange={e => setIme(e.target.value)}
-              required
-              style={{ width: "100%", padding: "8px", marginBottom: "10px" }}
-            />
-
-            <label>Email adresa:</label>
-            <input
-              type="email"
-              value={email}
-              onChange={e => setEmail(e.target.value)}
               required
               style={{ width: "100%", padding: "8px", marginBottom: "10px" }}
             />

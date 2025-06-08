@@ -65,3 +65,119 @@ body {
 .auth-form button:hover {
   background: #e1322d;
 }
+
+.meal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.meal-card {
+  max-width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.meal-card img {
+  width: 100%;
+  height: 180px; /* Fiksna visina slike */
+  object-fit: cover;
+}
+
+.meal-card .meal-content {
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.meal-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+}
+
+.meal-card p {
+  color: #ff3c38;
+  font-weight: bold;
+  margin: 0;
+}
+
+.category-nav {
+  padding: 20px;
+  text-align: center;
+}
+
+.category-nav .category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.category-nav button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background: #ff3c38;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.category-nav button:hover {
+  background: #e1322d;
+}
+
+/*Dio koda zaduzen za responzivnost*/
+
+/* MOBILE: do 600px */
+@media (max-width: 600px) {
+  .meal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-form {
+    width: 90%;
+  }
+
+  .category-buttons {
+    flex-direction: column;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+
+  .meal-card img {
+    height: 160px;
+  }
+}
+
+/* TABLET: do 900px */
+@media (max-width: 900px) {
+  .meal-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .category-buttons {
+    gap: 8px;
+  }
+
+  .meal-content h3 {
+    font-size: 1rem;
+  }
+
+  .meal-content p {
+    font-size: 0.9rem;
+  }
+}

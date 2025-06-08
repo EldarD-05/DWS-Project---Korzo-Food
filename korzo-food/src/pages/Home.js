@@ -23,11 +23,35 @@ function Home() {
     }
   };
 
+  const scrollToCategory = (category) => {
+    const section = document.getElementById(category);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const categories = Object.keys(groupedMeals);
+
+  const handleAddToCart = () => {
+    alert("Uspješno dodano u korpu!");
+  };
+
   return (
     <div style={{ fontFamily: "Poppins, sans-serif" }}>
       {/* Hero section */}
       <section style={{ background: "linear-gradient(135deg, #ff3c38, #ff5e57)", color: "white", padding: "60px 20px", textAlign: "center" }}>
-        <img src="/images/logo.jpg" alt="Korzo Food Logo" style={{ width: "120px", marginBottom: "20px" }} />
+        <img
+          src="/images/logo.jpg"
+          alt="Korzo Food Logo"
+          style={{
+            width: "150px",
+            height: "150px",
+            marginBottom: "20px",
+            borderRadius: "50%",
+            objectFit: "cover",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.2)"
+          }}
+        />
         <h1 style={{ fontSize: "3rem", marginBottom: "10px" }}>KORZO FOOD</h1>
         <p style={{ fontSize: "1.5rem" }}>Ukusni obroci. Brza dostava. Savršena lokacija.</p>
         <button
@@ -38,23 +62,32 @@ function Home() {
         </button>
       </section>
 
+      {/* Category nav */}
+      <section className="category-nav">
+        <div className="category-buttons">
+          {categories.map((cat, idx) => (
+            <button key={idx} onClick={() => scrollToCategory(cat)}>
+              {cat}
+            </button>
+          ))}
+        </div>
+      </section>
+
       {/* Grouped products */}
       <section id="meals-section" style={{ padding: "40px 20px", maxWidth: "1200px", margin: "0 auto" }}>
         {Object.keys(groupedMeals).map((category, index) => (
-          <div key={index} style={{ marginBottom: "50px" }}>
+          <div key={index} id={category} style={{ marginBottom: "50px" }}>
             <h2 style={{ marginBottom: "20px", borderBottom: "2px solid #ff3c38", display: "inline-block", paddingBottom: "5px" }}>{category.toUpperCase()}</h2>
-            <div style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
-              gap: "20px",
-              justifyItems: "start"
-            }}>
+            <div className="meal-grid">
               {groupedMeals[category].map(meal => (
-                <div key={meal.id} style={{ border: "1px solid #eee", borderRadius: "10px", overflow: "hidden", boxShadow: "0 2px 6px rgba(0,0,0,0.05)", maxWidth: "300px" }}>
-                  <img src={meal.image} alt={meal.title} style={{ width: "100%", height: "180px", objectFit: "cover" }} />
-                  <div style={{ padding: "15px" }}>
-                    <h3 style={{ margin: "0 0 10px 0" }}>{meal.title}</h3>
-                    <p style={{ fontWeight: "bold", color: "#ff3c38" }}>{meal.price.toFixed(2)} KM</p>
+                <div className="meal-card" key={meal.id}>
+                  <img src={meal.image} alt={meal.title} />
+                  <div className="meal-content">
+                    <h3>{meal.title}</h3>
+                    <p>{meal.price.toFixed(2)} KM</p>
+                    <button onClick={handleAddToCart} style={{ padding: "8px 12px", background: "#ff3c38", color: "white", border: "none", borderRadius: "5px", marginTop: "10px" }}>
+                      Dodaj u korpu
+                    </button>
                   </div>
                 </div>
               ))}
