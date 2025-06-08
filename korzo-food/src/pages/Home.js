@@ -40,7 +40,18 @@ function Home() {
     <div style={{ fontFamily: "Poppins, sans-serif" }}>
       {/* Hero section */}
       <section style={{ background: "linear-gradient(135deg, #ff3c38, #ff5e57)", color: "white", padding: "60px 20px", textAlign: "center" }}>
-        <img src="/images/logo.jpg" alt="Korzo Food Logo" style={{ width: "120px", marginBottom: "20px" }} />
+        <img
+          src="/images/logo.jpg"
+          alt="Korzo Food Logo"
+          style={{
+            width: "150px",
+            height: "150px",
+            marginBottom: "20px",
+            borderRadius: "50%",
+            objectFit: "cover",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.2)"
+          }}
+        />
         <h1 style={{ fontSize: "3rem", marginBottom: "10px" }}>KORZO FOOD</h1>
         <p style={{ fontSize: "1.5rem" }}>Ukusni obroci. Brza dostava. Savršena lokacija.</p>
         <button

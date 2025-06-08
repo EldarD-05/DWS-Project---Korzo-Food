@@ -133,3 +133,51 @@ body {
 .category-nav button:hover {
   background: #e1322d;
 }
+
+/*Dio koda zaduzen za responzivnost*/
+
+/* MOBILE: do 600px */
+@media (max-width: 600px) {
+  .meal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-form {
+    width: 90%;
+  }
+
+  .category-buttons {
+    flex-direction: column;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+
+  .meal-card img {
+    height: 160px;
+  }
+}
+
+/* TABLET: do 900px */
+@media (max-width: 900px) {
+  .meal-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .category-buttons {
+    gap: 8px;
+  }
+
+  .meal-content h3 {
+    font-size: 1rem;
+  }
+
+  .meal-content p {
+    font-size: 0.9rem;
+  }
+}
