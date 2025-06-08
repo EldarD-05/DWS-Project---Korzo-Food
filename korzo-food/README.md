@@ -1,70 +1,168 @@
-# Getting Started with Create React App
+# Korzo Food - Fast Food Web Aplikacija
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Kratki opis teme
+Korzo Food je moderna web aplikacija za pregled hrane razvijena za lokalni fast food. Omogućava korisnicima pregled jela, slanje poruka preko kontakt forme, dok administratori mogu upravljati ponudom i provjeravati sugestije, pitanja i eventualne narudzbe.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Tehnologije korištene u radu
 
-### `npm start`
+- React.js
+- CSS3 (sa Poppins fontom i custom dizajnom)
+- JSON Server (mock backend)
+- JavaScript (ES6+)
+- Google Maps Embed API
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Struktura projekta
 
-### `npm test`
+```
+Korzo-Food/
+├── public/
+│   └── images/              # slike jela, logo itd.
+├── src/
+│   ├── components/          # Navbar, Footer, Hero, Card, itd.
+│   ├── pages/               # Home, About, Contact, Admin, Login, Register
+│   ├── styles/              # svi CSS fajlovi
+│   ├── data/                # fajl sa podacima o jelima (ako postoji)
+│   └── App.js               # glavna komponenta
+├── db.json                  # baza podataka za JSON Server
+└── README.md                # dokumentacija
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Funkcionalnosti i opis dizajna
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Početna stranica** sa promotivnim heroom, prikazom jela po kategorijama
+- **Navigacija** sa hamburger menijem i linkovima za sve sekcije
+- **Autentikacija** (Prijava, Registracija)
+  - Dvije uloge: `admin`, `guest`
+- **Admin Panel** – dodavanje jela
+- **Kontakt forma** – validacija email adrese, prikaz poruka za admina
+- **Responsive dizajn** za mobitel, tablet i desktop
+- **Dizajn**: crveno-bijela paleta, `#ff3c38`, `#ff5e57`
+- **Font**: Poppins (Google Fonts)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Uloge korisnika
 
-### `npm run eject`
+- **Admin**
+  - Može dodavati jela
+  - Ima pristup listi svih poruka korisnika
+- **Guest**
+  - Može pregledati jela
+  - Može poslati poruku
+- **Neregistrovani korisnik**
+  - Može pregledati sadržaj
+  - Može poslati poruku ali ce biti prikazano default ime
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Doprinos članova tima
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Eldar Deronja (vođa tima)** – 
+- **Amna Bečak** – 
+- **Naida Burkić** – 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 🔹 Naida
+- Implementirala autentikaciju (login/registracija) koristeći `json-server` i kreirala testne korisnike
+- Doradila izgled stranica, dodala pozadine i ispravila greške u prikazu
+- Unijela brojne proizvode (jela) u bazu i frontend prikaz
 
-## Learn More
+### 🔹 Amna
+- Kreirala stranice: **O nama**, **Kontakt**, **Prijava** i **Registracija**
+- Implementirala **admin panel** s prikazom samo za admin korisnike i zaštitila rutu
+- Omogućila dodavanje jela u admin panel (kategorije, slike)
+- Ažurirala početnu stranicu s **hero sekcijom** i grupisanim prikazom jela
+- Dodala dugme **„Dodaj u korpu“** za svako jelo i doradila validaciju e-maila
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 🔹 Eldar (vođa grupe)
+- Postavio strukturu React projekta i inicijalne fajlove
+- Razvio formu za dodavanje jela u admin panel koristeći slike iz lokalnog `public/images` foldera
+- Implementirao pozadinsku sliku, centriranje **Login** i **Register** formi
+- Stilizirao logo i dodao **responsivan dizajn** za sve prikaze
+- Obavio završno čišćenje i organizaciju koda
+- Pripremio i napisao kompletnu **dokumentaciju** projekta
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Upute za pokretanje projekta
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Kloniraj repository:
+   ```
+   git clone https://github.com/ime/repozitorij.git
+   cd Korzo-Food
+   ```
 
-### Analyzing the Bundle Size
+2. Instaliraj zavisnosti:
+   ```
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. Pokreni React app:
+   ```
+   npm start
+   ```
 
-### Making a Progressive Web App
+4. Pokreni JSON Server (u drugom terminalu):
+   ```
+   npx json-server --watch db.json --port 5000
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Funkcionalnosti aplikacije
 
-### Advanced Configuration
+Podatke za prijavu možete pronaći u `db.json` fajlu.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Podaci za prijavu:
+  ## Admin
+  Email: admin@gmail.com
+  Sifra: admin123
+  ## Guest
+  Email: guest@gmail.com
+  Sifra: guest123
 
-### Deployment
+## Dodavanje hrane
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Ukoliko sami budete željeli dodati jelo, za Vas smo pripremili pizzu vegetarijanu:
+U polje koje traži naziv slike unesite `Pizza Vegetarijana.jpg`; 
 
-### `npm run build` fails to minify
+## Snimci ekrana aplikacije
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 1. Početna stranica (nije prijavljen)
+![1. Pocetna_neprijavljen](./public/screenshots/1.Pocetna_neprijavljen.PNG)
+
+### 1.1 Početna (korisnik)
+![1.1. Pocetna_user](./public/screenshots/1.1.Pocetna_user.PNG)
+
+### 1.2 Početna (admin)
+![1.2. Pocetna_admin](./public/screenshots/1.2.Pocetna_admin.PNG)
+
+### 1.3 Mobilni prikaz
+![1.3. Pocetna_mobile](./public/screenshots/1.3.Pocetna_mobile.PNG)
+
+### 1.4 Mobilni prikaz (hamburger meni)
+![1.4. Pocetna_mobile_hamburger_meni](./public/screenshots/1.4.Pocetna_mobile_hamburger_meni.PNG)
+
+### 2. Primjer menija
+![2. Primjer_menija](./public/screenshots/2.Primjer_menija.PNG)
+
+### 3. O nama
+![3. O_nama](./public/screenshots/3.O_nama.PNG)
+
+### 4. Kontakt i lokacija (korisnik)
+![4. Kontakt_i_lokacija](./public/screenshots/4.Kontakt_i_lokacija.PNG)
+
+### 4.1 Kontakt (admin)
+![4.1. Kontakt_admin](./public/screenshots/4.1.Kontakt_admin.PNG)
+
+### 5. Prijava
+![5. Prijava](./public/screenshots/5.Prijava.PNG)
+
+### 6. Registracija
+![6. Registracija](./public/screenshots/6.Registracija.PNG)
+
+### 7. Admin panel
+![7. Admin panel](./public/screenshots/7.Admin_panel.PNG)
