@@ -1,3 +1,4 @@
+import "./../assets/styles/Contact.css";
 import { useState, useEffect } from "react";
 
 function Contact() {
@@ -51,15 +52,15 @@ function Contact() {
   };
 
   return (
-    <div style={{ padding: "40px", fontFamily: 'Poppins, sans-serif' }}>
+    <div className="contact-container">
       <h1>Kontakt</h1>
 
       {user?.role === "admin" ? (
         <>
           <p>Lista svih primljenih poruka:</p>
-          <ul style={{ marginTop: "20px" }}>
+          <ul className="message-list">
             {svePoruke.map((msg, index) => (
-              <li key={index} style={{ marginBottom: "15px", borderBottom: "1px solid #ccc", paddingBottom: "10px" }}>
+              <li key={index}>
                 <strong>{msg.ime}</strong> ({msg.email})<br />
                 {msg.poruka}<br />
                 <small>{new Date(msg.timestamp).toLocaleString()}</small>
@@ -71,14 +72,13 @@ function Contact() {
         <>
           <p>Imate pitanje, sugestiju ili želite naručiti? Pošaljite nam poruku!</p>
 
-          <form onSubmit={handleSubmit} style={{ maxWidth: "500px", marginTop: "20px" }}>
+          <form onSubmit={handleSubmit} className="contact-form">
             <label>Ime i prezime:</label>
             <input
               type="text"
               value={ime}
               onChange={e => setIme(e.target.value)}
               required
-              style={{ width: "100%", padding: "8px", marginBottom: "10px" }}
             />
 
             <label>Poruka:</label>
@@ -87,28 +87,18 @@ function Contact() {
               onChange={e => setPoruka(e.target.value)}
               required
               rows="4"
-              style={{ width: "100%", padding: "8px", marginBottom: "10px" }}
             />
 
-            <button
-              type="submit"
-              style={{ padding: "10px 20px", background: "#ff3c38", color: "white", border: "none" }}
-            >
-              Pošalji poruku
-            </button>
+            <button type="submit">Pošalji poruku</button>
           </form>
 
-          <div style={{ marginTop: "40px" }}>
+          <div className="contact-map">
             <h2>Gdje se nalazimo?</h2>
             <iframe
               src="https://www.google.com/maps?q=Mehmedalije+Tarabara+15,+Zenica,+Bosnia+and+Herzegovina&output=embed"
-              width="100%"
-              height="400"
-              style={{ border: "0", marginTop: "10px" }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
               title="Korzo Food lokacija"
+              loading="lazy"
+              allowFullScreen
             ></iframe>
           </div>
         </>

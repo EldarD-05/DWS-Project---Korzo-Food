@@ -1,3 +1,4 @@
+import "./../assets/styles/AdminPage.css";
 import { useState } from "react";
 
 function AdminPage() {
@@ -35,27 +36,46 @@ function AdminPage() {
   };
 
   return (
-    <div style={{ padding: "40px", fontFamily: 'Poppins, sans-serif' }}>
+    <div className="admin-container">
       <h1>Admin Panel</h1>
       <p>Dobrodošao, {user?.name || "admin"}!</p>
 
       <h2>Dodaj novo jelo</h2>
-      <form onSubmit={handleAddMeal} style={{ maxWidth: "400px", marginTop: "20px" }}>
+      <form onSubmit={handleAddMeal} className="admin-form">
         <label>Naziv jela:</label>
-        <input type="text" value={title} onChange={e => setTitle(e.target.value)} required style={{ width: "100%", padding: "8px", marginBottom: "10px" }} />
+        <input
+          type="text"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          required
+        />
 
         <label>Cijena (KM):</label>
-        <input type="number" step="0.01" value={price} onChange={e => setPrice(e.target.value)} required style={{ width: "100%", padding: "8px", marginBottom: "10px" }} />
+        <input
+          type="number"
+          step="0.01"
+          value={price}
+          onChange={(e) => setPrice(e.target.value)}
+          required
+        />
 
         <label>Naziv slike (npr. burger.jpg):</label>
-        <input type="text" value={imageName} onChange={e => setImageName(e.target.value)} required style={{ width: "100%", padding: "8px", marginBottom: "10px" }} />
+        <input
+          type="text"
+          value={imageName}
+          onChange={(e) => setImageName(e.target.value)}
+          required
+        />
 
         <label>Kategorija (npr. Pizza, Grill, Burgeri):</label>
-        <input type="text" value={category} onChange={e => setCategory(e.target.value)} required style={{ width: "100%", padding: "8px", marginBottom: "10px" }} />
+        <input
+          type="text"
+          value={category}
+          onChange={(e) => setCategory(e.target.value)}
+          required
+        />
 
-        <button type="submit" style={{ padding: "10px 20px", background: "#ff3c38", color: "white", border: "none" }}>
-          Dodaj jelo
-        </button>
+        <button type="submit">Dodaj jelo</button>
       </form>
     </div>
   );

@@ -1,3 +1,4 @@
+import "./../assets/styles/Auth.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -27,7 +28,6 @@ function Login() {
     }
   };
 
-
   return (
     <div className="auth-wrapper">
       <div className="auth-form">
@@ -52,7 +52,6 @@ function Login() {
       </div>
     </div>
   );
-
 }
 
 export default Login;

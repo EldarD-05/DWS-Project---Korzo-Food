@@ -1,0 +1,39 @@
+/* Reset osnovnog stila */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Globalni font i pozadina */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('../images/background-image.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Pomoćni kontejner (ako koristiš oko sadržaja) */
+.main-container {
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Globalna responzivnost hero teksta (opcionalno) */
+@media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+}
