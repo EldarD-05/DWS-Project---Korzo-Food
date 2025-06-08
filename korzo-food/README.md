@@ -92,7 +92,7 @@ Korzo-Food/
 1. Kloniraj repository:
    ```
    git clone https://github.com/ime/repozitorij.git
-   cd Korzo-Food
+   cd korzo-food
    ```
 
 2. Instaliraj zavisnosti:
