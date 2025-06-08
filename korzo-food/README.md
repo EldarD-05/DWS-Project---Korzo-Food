@@ -59,8 +59,6 @@ Korzo-Food/
   - Može pregledati sadržaj
   - Može poslati poruku ali ce biti prikazano default ime
 
----
-
 ## Doprinos članova tima
 
 - **Eldar Deronja (vođa tima)** – 
@@ -128,6 +126,7 @@ Podaci za prijavu:
 
 Ukoliko sami budete željeli dodati jelo, za Vas smo pripremili pizzu vegetarijanu:
 U polje koje traži naziv slike unesite `Pizza Vegetarijana.jpg`; 
+
 
 ## Snimci ekrana aplikacije
 
