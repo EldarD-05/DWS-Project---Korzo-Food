@@ -33,325 +33,318 @@
   ],
   "meals": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Hamburger",
       "price": 5.95,
       "image": "/images/hamburger.jpg",
       "category": "Burgeri i užina"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Korzo Wrap",
       "price": 7.5,
       "image": "/images/korzo wrap.jpg",
       "category": "Burgeri i užina"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Pomfrit",
       "price": 2.5,
       "image": "/images/pomfrit.jpg",
       "category": "Prilozi"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Pohovana piletina",
       "price": 6,
       "image": "/images/pohovana piletina.jpg",
       "category": "Grill"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Palačinci Nutela",
       "price": 3.5,
       "image": "/images/palacinci-nutella.png",
       "category": "Deserti"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Pizza Margherita",
       "price": 8.5,
       "image": "/images/Pizza margharita.jpg",
       "category": "Pizza"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Pileći file sa zara",
       "price": 7,
       "image": "/images/pileci file sa zara.jpg",
       "category": "Grill"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Kobasice",
       "price": 6,
       "image": "/images/kobasice.jpg",
       "category": "Grill"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Coca Cola",
       "price": 2,
       "image": "/images/coca cola.jpg",
       "category": "Pića"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Ledeni čaj",
       "price": 2,
       "image": "/images/ledeni caj.jpg",
       "category": "Pića"
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "Palačinci Rafaelo",
       "price": 5,
       "category": "Deserti",
       "image": "/images/palacinci-rafaelo.jpg"
     },
     {
-      "id": 13,
+      "id": "13",
       "title": "Wafle Nutella",
       "price": 4,
       "category": "Deserti",
       "image": "/images/waffle nutela.jpg"
     },
     {
-      "id": 14,
+      "id": "14",
       "title": "Barbecue Sos",
       "price": 2.5,
       "image": "/images/BBQ sos.jpg",
       "category": "Sosevi"
     },
     {
-      "id": 15,
+      "id": "15",
       "title": "Curry Sos",
       "price": 2.5,
       "image": "/images/curry sos.jpg",
       "category": "Sosevi"
     },
     {
-      "id": 16,
+      "id": "16",
       "title": "Kečap",
       "price": 2.5,
       "image": "/images/kecap.jpg",
       "category": "Sosevi"
     },
     {
-      "id": 17,
+      "id": "17",
       "title": "Nacho Sos",
       "price": 2.5,
       "image": "/images/nacho sos.jpg",
       "category": "Sosevi"
     },
     {
-      "id": 18,
+      "id": "18",
       "title": "Tartar Sos",
       "price": 2.5,
       "image": "/images/tartar sos.jpg",
       "category": "Sosevi"
     },
     {
-      "id": 19,
+      "id": "19",
       "title": "Fanta",
       "price": 2,
       "image": "/images/fanta.jpg",
       "category": "Pića"
     },
     {
-      "id": 20,
+      "id": "20",
       "title": "Dvojni C",
       "price": 2,
       "image": "/images/dvojni c.jpg",
       "category": "Pića"
     },
     {
-      "id": 21,
+      "id": "21",
       "title": "Čiken",
       "price": 5,
       "image": "/images/ciken.jpg",
       "category": "Burgeri i užina"
     },
     {
-      "id": 22,
+      "id": "22",
       "title": "Hot Dog",
       "price": 5,
       "image": "/images/hotdog.jpg",
       "category": "Burgeri i užina"
     },
     {
-      "id": 23,
+      "id": "23",
       "title": "Pileća salata",
       "price": 2.5,
       "image": "/images/pileca salata.jpg",
       "category": "Prilozi"
     },
     {
-      "id": 24,
+      "id": "24",
       "title": "Pohovani sir",
       "price": 2,
       "image": "/images/pohovani sir.jpg",
       "category": "Grill"
     },
     {
-      "id": 25,
+      "id": "25",
       "title": "Chicken Curry",
       "price": 5,
       "image": "/images/Chicken Curry.jpg",
       "category": "Burgeri i užina"
     },
     {
-      "id": 26,
+      "id": "26",
       "title": "Chicken Nuggets",
       "price": 6,
       "image": "/images/Chicken nuggets.jpg",
       "category": "Grill"
     },
     {
-      "id": 27,
+      "id": "27",
       "title": "Grand Cheese",
       "price": 5.95,
       "image": "/images/Grand Cheese Burger.jpg",
       "category": "Burgeri i užina"
     },
     {
-      "id": 28,
+      "id": "28",
       "title": "Korzo Sendvič",
       "price": 4,
       "image": "/images/Korzo sendvič.jpg",
       "category": "Burgeri i užina"
     },
     {
-      "id": 29,
+      "id": "29",
       "title": "Sendvič 1",
       "price": 3,
       "image": "/images/Sendvič1.jpg",
       "category": "Burgeri i užina"
     },
     {
-      "id": 30,
+      "id": "30",
       "title": "Sendvič 2",
       "price": 3.5,
       "image": "/images/Sendvič2.jpg",
       "category": "Burgeri i užina"
     },
     {
-      "id": 31,
+      "id": "31",
       "title": "Tobacco Cheese sendvič",
       "price": 4.5,
       "image": "/images/Tobacco cheese sendvič.jpg",
       "category": "Burgeri i užina"
     },
     {
-      "id": 32,
+      "id": "32",
       "title": "Veggie Burger",
       "price": 5,
       "image": "/images/Veggie Burger.jpg",
       "category": "Burgeri i užina"
     },
     {
-      "id": 33,
+      "id": "33",
       "title": "Pohovana piletina u sosu",
       "price": 6,
       "image": "/images/Pohovana piletina u sosu.jpg",
       "category": "Grill"
     },
     {
-      "id": 34,
+      "id": "34",
       "title": "Rolovani pileći ražnjići",
       "price": 6,
       "image": "/images/Rolovani pileći ražnjići.jpg",
       "category": "Grill"
     },
     {
-      "id": 35,
+      "id": "35",
       "title": "Coca Cola Zero",
       "price": 2.5,
       "image": "/images/coca-cola zero.png",
       "category": "Pića"
     },
     {
-      "id": 36,
+      "id": "36",
       "title": "Orangina",
       "price": 1.5,
       "image": "/images/orangina.png",
       "category": "Pića"
     },
     {
-      "id": 37,
+      "id": "37",
       "title": "Schweps",
       "price": 3,
       "image": "/images/schweps.png",
       "category": "Pića"
     },
     {
-      "id": 38,
+      "id": "38",
       "title": "Schweps Premium",
       "price": 3.5,
       "image": "/images/schweps-premium.png",
       "category": "Pića"
     },
     {
-      "id": 39,
+      "id": "39",
       "title": "Fruktal",
       "price": 3,
       "image": "/images/sok-fruktal.png",
       "category": "Pića"
     },
     {
-      "id": 40,
+      "id": "40",
       "title": "Fruktal Grožđe",
       "price": 3,
       "image": "/images/sok-fruktal-grozdje.png",
       "category": "Pića"
     },
     {
-      "id": 41,
+      "id": "41",
       "title": "Majoneza",
       "price": 1.5,
       "image": "/images/Majoneza.jpg",
       "category": "Sosevi"
     },
     {
-      "id": 42,
+      "id": "42",
       "title": "Pizza Al Tono",
       "price": 8.5,
       "image": "/images/Pizza Al tono.jpg",
       "category": "Pizza"
     },
     {
-      "id": 43,
+      "id": "43",
       "title": "Pizza Capriccosa",
       "price": 9.5,
       "image": "/images/Pizza Capriccosa.jpg",
       "category": "Pizza"
     },
     {
-      "id": 44,
+      "id": "44",
       "title": "Pizza Fungi",
       "price": 8,
       "image": "/images/Pizza Fungi.jpg",
       "category": "Pizza"
     },
     {
-      "id": 45,
+      "id": "45",
       "title": "Pizza Losos",
       "price": 7,
       "image": "/images/Pizza Losos.jpg",
       "category": "Pizza"
     },
     {
-      "id": 46,
+      "id": "46",
       "title": "Pizza Meksikana",
       "price": 10,
       "image": "/images/Pizza Meksikana.jpg",
-      "category": "Pizza"
-    },
-    {
-      "id": 47,
-      "title": "Pizza Vegetarijana",
-      "price": 9,
-      "image": "/images/Pizza Vegetarijana.jpg",
       "category": "Pizza"
     }
   ]
